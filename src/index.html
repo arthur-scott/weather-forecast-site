@@ -3,7 +3,25 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Template</title>
+        <link rel="stylesheet" href="styles.css" />
+        <title>Weather Forecast</title>
     </head>
-    <body></body>
+    <body>
+        <form action="" method="get" class="query-form">
+            <p>
+                <label for="weather-search"
+                    >Find a forecast:
+                    <input
+                        type="search"
+                        name="weather-search"
+                        id="weather-search"
+                    />
+                    <span class="error" aria-live="polite"></span>
+                </label>
+            </p>
+            <button type="submit" class="search-button">Submit</button>
+        </form>
+
+        <script defer src="index.js"></script>
+    </body>
 </html>
